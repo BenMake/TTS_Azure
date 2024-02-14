@@ -13,7 +13,7 @@ docker run -itd \
            --name tts \
             -p 3035:3035 \
            --restart=always \
-           zengsuyi/tts:latest
+           benshellx/tts_azure:latest
 ```
 
 3. 访问地址
