@@ -3,7 +3,7 @@
 1. 下载docker镜像
 
 ```bash
-docker pull zengsuyi/tts:latest
+docker pull benshellx/tts_azure:latest
 ```
 
 2. 运行容器
