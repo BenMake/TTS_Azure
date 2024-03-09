@@ -1,5 +1,5 @@
 # 工作流名称
-name: Build TTS_Azure Docker Image
+name: Build tts_azure Docker Image
 
 # push tag 时触发执行
 on:
@@ -11,8 +11,9 @@ on:
 # 定义 APP_NAME 用于 docker build-args
 # 定义 DOCKERHUB_REPO 标记 docker hub repo 名称
 env:
-  APP_NAME: TTS_Azure
-  DOCKERHUB_REPO: BenMake/TTS_Azure
+  APP_NAME: tts_azure
+  DOCKERHUB_REPO: benmake/tts_azure
+
 
 jobs:
   main:
