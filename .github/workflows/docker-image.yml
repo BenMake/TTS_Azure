@@ -11,8 +11,8 @@ on:
 # 定义 APP_NAME 用于 docker build-args
 # 定义 DOCKERHUB_REPO 标记 docker hub repo 名称
 env:
-  APP_NAME: httpproxy
-  DOCKERHUB_REPO: isayme/httpproxy
+  APP_NAME: TTS_Azure
+  DOCKERHUB_REPO: BenMake/TTS_Azure
 
 jobs:
   main:
@@ -49,11 +49,11 @@ jobs:
           push: true
           # 生成多平台镜像, see https://github.com/docker-library/bashbrew/blob/v0.1.1/architecture/oci-platform.go
           platforms: |
-            linux/386
-            linux/amd64
-            linux/arm/v6
             linux/arm/v7
-            linux/arm64/v8
+          # linux/386
+          # linux/amd64
+          # linux/arm/v6
+          # linux/arm64/v8
           # docker build arg, 注入 APP_NAME/APP_VERSION
           build-args: |
             APP_NAME=${{ env.APP_NAME }}
